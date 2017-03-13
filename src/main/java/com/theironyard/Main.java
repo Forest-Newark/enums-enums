@@ -17,12 +17,13 @@ public class Main {
             different units.
          */
         // todo: convert something
-
+        Converter.convert(500,Unit.MILE,Unit.CENTIMETER);
 
         // todo: convert something else
-
+        Converter.convert(10,Unit.FOOT,Unit.YARD);
 
         // todo: convert yet another thing
+        Converter.convert(10000,Unit.KILOMETER,Unit.INCH);
 
 
     }

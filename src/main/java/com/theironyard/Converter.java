@@ -5,6 +5,8 @@ package com.theironyard;
  * will convert a length in one unit to the equivalent value in another unit.
  */
 
+public class Converter {
+
     /**
      * Create a static method named `convert`. This method will accept the
      * following arguments:
@@ -21,6 +23,17 @@ package com.theironyard;
      * @return the converted length
      */
     // todo: create convert method
+    public static double convert(double length,Unit from, Unit to) {
+        // todo: create a variable and set it to length times the number of millimeters in the unit
+       double base = from.toMillimeters() * length;
+
+        // todo: return the result of dividing the length in millimeters by the number of millimeters in the unit we're convering to
+        return base/(to.toMillimeters());
+
+
+
+    }
+
 
         /*
             Since any unit knows how long it is in millimeters, we can use
@@ -30,9 +43,5 @@ package com.theironyard;
             number of millimeters in a foot to find the number of feet in a
             mile.
          */
-        // todo: create a variable and set it to length times the number of millimeters in the unit
 
-
-        // todo: return the result of dividing the length in millimeters by the number of millimeters in the unit we're convering to
-
-
+}
